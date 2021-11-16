@@ -12,6 +12,11 @@
     padding: 30px 0;
     /* background: black; */
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar .sticky{
+    padding: 15px 0;
+    background: black;
 }
 .max-width{
     max-width: 1300px;
