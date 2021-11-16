@@ -10,7 +10,7 @@
     position: fixed;
     width: 100%;
     padding: 15px 0;
-    background: #7e4937;
+    background: black;
     font-family: 'Ubuntu', sans-serif;
 }
 .max-width{
@@ -24,7 +24,6 @@
     justify-content: space-between;
 
 }
-
 .navbar .logo a{
     color: #fff;
     font-size: 35px;
@@ -40,4 +39,15 @@
     font-weight: 500;
     margin-left: 25px;
 
+}
+
+/* Home section styling */
+.home{
+    display: flex;
+    background: url("images/banner2.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
 }
