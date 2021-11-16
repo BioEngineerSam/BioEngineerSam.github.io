@@ -16,7 +16,7 @@
 }
 .navbar .sticky{
     padding: 15px 0;
-    background: black;
+    background: #111C30;
 }
 .max-width{
     max-width: 1300px;
@@ -30,7 +30,7 @@
 
 }
 .navbar .logo a{
-    color: #fff;
+    color: #80756B;
     font-size: 35px;
     font-weight: 600;
 }
@@ -42,7 +42,7 @@
     display: inline-block;
 }
 .navbar .menu li a{
-    color: #fff;
+    color: #80756B;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -61,7 +61,7 @@
     display: flex;
     background: url("Images/banner2.jpg") no-repeat center;
     height: 100vh;
-    color: #fff;
+    color: #80756B;
     background-size: cover;
     background-attachment: fixed;
     min-height: 500px;
