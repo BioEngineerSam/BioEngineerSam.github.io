@@ -5,3 +5,26 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/*Navbar Styling*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li a{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+
+}
