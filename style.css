@@ -9,7 +9,8 @@
 .navbar{
     position: fixed;
     width: 100%;
-    background: crimson;
+    padding: 15px 0;
+    background: #7e4937;
     font-family: 'Ubuntu', sans-serif;
 }
 .max-width{
@@ -35,5 +36,8 @@
 }
 .navbar .menu li a{
     color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
 
 }
