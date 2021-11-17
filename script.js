@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
+        //sticky navbar when scrolling
         if(this.scrollY >20){
             $('.navbar').addClass("sticky");
         }else{

@@ -38,6 +38,9 @@
     color: #bc4c33;
     transition: all 0.5s ease;
 }
+.navbar.sticky .logo a {
+    color: #bc4c33;
+}
 .navbar.sticky .logo a span{
     color: #fff;
 }
@@ -59,7 +62,7 @@
     
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #bc4c33;
 
 }
 
@@ -123,19 +126,21 @@
 }
 
 /* responsive media query start  */
-@media (max-width: 1104px){
+/* @media (max-width: 1104px){
     .home .max-width{
         margin-left:  0px;
 
     }
-}
-@media (max-width: 991px){
+} */
+/* @media (max-width: 991px){
     .max-width{
         padding: 0 50px;
     }
-}
+} */
 @media (max-width: 947px){
-    
+    .max-width{
+        padding: 0 50px;
+    }
     .menu-btn{
         display: block;
         z-index: 999;
