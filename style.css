@@ -14,7 +14,7 @@
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar .sticky{
+.navbar.sticky{
     padding: 15px 0;
     background: #111C30;
 }
@@ -36,6 +36,10 @@
 }
 .navbar .logo a span{
     color: #9A4D55;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #80756B;
 }
 .navbar .menu li{
     list-style: none;
@@ -46,14 +50,25 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3 ease;
 
 }
 .navbar .menu li a:hover{
     color: #9A4D55;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3 ease;
+    
+}
+.navbar.sticky .menu li a:hover{
+    color: #80756B;
+
+}
+
+/* menu btn styling */
+.menu-btn{
+    color: #80756B;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+
 }
 
 /* Home section styling */
@@ -88,4 +103,10 @@
     color: #9A4D55;
     font-weight: 500;
     
+}
+/* responsive media query start  */
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
 }
