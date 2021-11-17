@@ -11,9 +11,8 @@
     width: 100%;
     padding: 30px 0;
     z-index: 999;
-    /* background: black; */
     font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -37,7 +36,7 @@
 }
 .navbar .logo a span{
     color: #9A4D55;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .navbar.sticky .logo a span{
     color: #80756B;
@@ -52,7 +51,7 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
-    transition: color 0.3 ease;
+    transition: color 0.5s ease;
 
 }
 .navbar .menu li a:hover{
