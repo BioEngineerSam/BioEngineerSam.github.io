@@ -125,16 +125,11 @@
     color: #fff;
     background: none;
 }
-
-/* about section styling */
+/* all similar content styling code */
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: 'Poppins', sans-serif;
-
-}
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -144,7 +139,7 @@ section{
     font-family: 'Ubuntu', sans-serif;
     
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -154,8 +149,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "who I am";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -165,7 +159,18 @@ section{
     background: #fff;
     transform: translateX(-50%);
 }
-.about .about-content{
+
+/* about section styling */
+
+.about, .projects{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.about .title::after{
+    content: "who I am";
+}
+.about .about-content, .projects .proj-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -212,6 +217,51 @@ section{
     color: #bc4c33;
     background: none;
 
+}
+
+/* projects section styling */
+.projects{
+    color: #fff;
+    background: #111;
+}
+.projects .title::before{
+    background: #fff;
+}
+.projects .title::after{
+    background: #111;
+    content: "what I've done";
+
+}
+.projects .proj-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.projects .proj-content .card:hover{
+    background: #bc4c33;
+}
+.projects .proj-content .card .box{
+    transition: all 0.5s ease;
+}
+.projects .proj-content .card:hover .box{
+    transform: scale(1.05)
+}
+.projects .proj-content .card i{
+    font-size: 50px;
+    color: #bc4c33;
+    transition: color 0.5s ease;
+}
+.projects .proj-content .card:hover i{
+    background: #fff;
+}
+.projects .proj-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 
