@@ -256,7 +256,7 @@ section .title::after{
     transition: color 0.5s ease;
 }
 .projects .proj-content .card:hover i{
-    background: #fff;
+    color: #111;
 }
 .projects .proj-content .card .text{
     font-size: 25px;
@@ -350,6 +350,10 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
+    .projects .proj-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 690px){
@@ -366,6 +370,9 @@ section .title::after{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .projects .proj-content .card{
+        width: 100%;
     }
 }
 @media (max-width: 500px){
