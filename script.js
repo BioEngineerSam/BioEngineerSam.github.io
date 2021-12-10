@@ -26,4 +26,25 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
+    
 });
+
+//email form submission script
+const form = document.querySelector("form"),
+statusTxt = form.querySelector(".button-area span")
+
+form.onsubmit = (e)=>{
+    e.preventDefault(); //preventing form from submitting
+    statusTxt.getElementsByClassName.display = "block";
+
+    let xhr = new XMLHttpRequest(); //creating new xml object
+    xhr.open("POST", "message.php", true); //sending post request to message.php file
+    xhr.onload = ()=>{ //once ajax has loaded
+        if(xhr.readyState ==4 && xhr.status == 200){ //this checks if ajax response status is 200 and ready status is 4 which means there is no error
+            let response = xhr.response; //storing ajax response in a response variable
+            console.log(response);
+
+        }
+
+    }
+};
