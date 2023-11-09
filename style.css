@@ -286,19 +286,38 @@ section .title::after{
  .contact .contact-content .left .icons{
     margin: 10px 0;
 }
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
+.contact .contact-content .row {
+    display: inline-flex; /* Use inline-flex to display them side by side */
     align-items: center;
+    margin-bottom: 10px;
+    margin-right: 50px;
 }
-.contact .contact-content .row .info{
-    margin-left: 30px;    
+
+
+.contact .contact-content .row .info {
+    display: flex; 
+    align-items: center; 
+    margin-left: 1px; /* Adjust this margin to control the spacing between the icon and the text */
 }
-.contact .contact-content .row i{
+
+
+.contact .contact-content .row i {
     font-size: 25px;
     color: #f4acb7;
-
+    width: 30px; /* Adjust the width as needed */
+    text-align: center; /* Center the icon horizontally */
+    margin-right: 20px; /* Add some space between icons */
 }
+
+.contact .contact-content .row .social-icon {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #f4acb7;
+    margin-right: 10px; /* Add spacing between icons */
+}
+
+
 .contact .contact-content .info .head, .contact .contact-content .info .head a{
     font-weight: 500;
 }
