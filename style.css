@@ -230,16 +230,28 @@ section .title::after{
 .projects .title::after{
     background: #111;
     content: "what I've done";
-
+}
+.projects .proj-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures responsive grid */
+    gap: 20px; /* Gap between grid items */
 }
 .projects .proj-content .card{
-    width: calc(33% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures all cards are the same height */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+}
+.projects .proj-content .card .box {
+    flex-grow: 1;
 }
 .projects .proj-content .card:hover{
     background: #f4acb7;
@@ -262,6 +274,20 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+}
+
+/* Responsive styling for project cards */
+@media (max-width: 991px){
+    .projects .proj-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for medium screens */
+    }
+}
+@media (max-width: 690px){
+    .projects .proj-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    }
 }
 
 /* skills section styling */
